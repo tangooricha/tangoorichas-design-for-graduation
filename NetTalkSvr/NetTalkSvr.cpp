@@ -34,6 +34,25 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 		CString tmpBuffer;
 		SOCKET server,client[8];
 		sockaddr_in serverAddr,clientAddr[8];
+		int serverAddrLenth=sizeof(serverAddr);
+		int clientCounter=0;
+		WSADATA wsaData;
+
+		if(WSAStartup(MAKEWORD( 2, 2 ),&wsaData)!=0)
+			return 0;
+
+		serverAddr.sin_addr.s_addr=INADDR_ANY;
+		serverAddr.sin_family=AF_INET;
+		serverAddr.sin_port=htons(8000);
+
+		if((server=socket(AF_INET,SOCK_STREAM,0))==INVALID_SOCKET)
+			return 0;
+
+		if(bind(server,(sockaddr*)&serverAddr,sizeof(serverAddr))!=0)
+			return 0;
+
+		if(listen(server,10)!=0)
+			return 0;
 
 	}
 
