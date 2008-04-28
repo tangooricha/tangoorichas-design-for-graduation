@@ -31,11 +31,12 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 	else
 	{
 		// TODO: code your application's behavior here.
-		CString tmpBuffer;
-		SOCKET server,client[8];
-		sockaddr_in serverAddr,clientAddr[8];
-		int serverAddrLenth=sizeof(serverAddr);
+		char tmpBuffer[65536];
+		SOCKET server,client[8],clientTmp;
+		sockaddr_in serverAddr,clientAddr[8],clientAddrTmp;
+		int clientAddrLenth=sizeof(clientAddrTmp);
 		int clientCounter=0;
+		int indexI;
 		WSADATA wsaData;
 
 		if(WSAStartup(MAKEWORD( 2, 2 ),&wsaData)!=0)
@@ -53,6 +54,26 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 
 		if(listen(server,10)!=0)
 			return 0;
+
+		while(true)
+		{
+			int sameClient=0;
+			clientTmp=accept(server,(struct sockaddr *)&clientAddrTmp,&clientAddrLenth);
+			for(indexI=0;indexI<clientCounter;indexI++)
+			{
+				if(clientTmp==client[indexI])
+					sameClient=1;
+			}
+			if(sameClient==0)
+			{
+				client[clientCounter]=clientTmp;
+				memcpy(&clientAddr[clientCounter],&clientAddrTmp,sizeof(clientAddrTmp));
+			}
+			clientCounter++;
+			recv(server,tmpBuffer,65535,0);
+			for(indexI=0;indexI<=clientCounter;indexI++)
+				send(client[indexI],tmpBuffer,strlen(tmpBuffer),0);
+		}
 
 	}
 
