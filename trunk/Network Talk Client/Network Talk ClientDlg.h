@@ -22,6 +22,7 @@ public:
 	//{{AFX_DATA(CNetworkTalkClientDlg)
 	enum { IDD = IDD_NETWORKTALKCLIENT_DIALOG };
 	CEdit	m_Edit_Receive;
+	CString	m_RecvCString;
 	//}}AFX_DATA
 
 	// ClassWizard generated virtual function overrides

@@ -32,7 +32,7 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 	{
 		// TODO: code your application's behavior here.
 		char tmpBuffer[65536];
-		SOCKET server,client[8],clientTmp;
+		SOCKET server,client[8],serverTmp,clientTmp;
 		sockaddr_in serverAddr,clientAddr[8],clientAddrTmp;
 		int clientAddrLenth=sizeof(clientAddrTmp);
 		int clientCounter=0;
@@ -55,6 +55,8 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 		if(listen(server,10)!=0)
 			return 0;
 
+		serverTmp=server;
+
 		while(true)
 		{
 			int sameClient=0;
@@ -71,9 +73,16 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 			}
 			clientCounter++;
 			recv(server,tmpBuffer,65535,0);
+			closesocket(clientTmp);
 			for(indexI=0;indexI<=clientCounter;indexI++)
+			{
+				connect(serverTmp,(struct sockaddr *)&clientAddr[indexI],clientAddrLenth);
 				send(client[indexI],tmpBuffer,strlen(tmpBuffer),0);
+				closesocket(serverTmp);
+			}
 		}
+		
+		WSACleanup();
 
 	}
 
