@@ -6,13 +6,8 @@
 --------------------Configuration: Network Talk Client - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP26.tmp" with contents
-[
-/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Network Talk Client.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"E:\tangooricha\Microsoft Visual Studio\Design for Graduation\Network Talk Client\Network Talk ClientDlg.cpp"
-]
-Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP26.tmp" 
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP27.tmp" with contents
+Creating command line "rc.exe /l 0x804 /fo"Debug/Network Talk Client.res" /d "_DEBUG" /d "_AFXDLL" "E:\tangooricha\Microsoft Visual Studio\Design for Graduation\Network Talk Client\Network Talk Client.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6E.tmp" with contents
 [
 /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Network Talk Client.pdb" /debug /machine:I386 /out:"Debug/Network Talk Client.exe" /pdbtype:sept 
 ".\Debug\Network Talk Client.obj"
@@ -20,10 +15,9 @@ Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP27.tmp" with cont
 ".\Debug\StdAfx.obj"
 ".\Debug\Network Talk Client.res"
 ]
-Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP27.tmp"
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6E.tmp"
 <h3>Output Window</h3>
-Compiling...
-Network Talk ClientDlg.cpp
+Compiling resources...
 Linking...
 
 

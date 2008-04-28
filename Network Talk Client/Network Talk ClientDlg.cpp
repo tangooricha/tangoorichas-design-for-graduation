@@ -63,7 +63,7 @@ CNetworkTalkClientDlg::CNetworkTalkClientDlg(CWnd* pParent /*=NULL*/)
 	: CDialog(CNetworkTalkClientDlg::IDD, pParent)
 {
 	//{{AFX_DATA_INIT(CNetworkTalkClientDlg)
-		// NOTE: the ClassWizard will add member initialization here
+	m_RecvCString = _T("");
 	//}}AFX_DATA_INIT
 	// Note that LoadIcon does not require a subsequent DestroyIcon in Win32
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
@@ -74,6 +74,7 @@ void CNetworkTalkClientDlg::DoDataExchange(CDataExchange* pDX)
 	CDialog::DoDataExchange(pDX);
 	//{{AFX_DATA_MAP(CNetworkTalkClientDlg)
 	DDX_Control(pDX, IDC_EDIT_RECEIVE, m_Edit_Receive);
+	DDX_Text(pDX, IDC_EDIT_RECEIVE, m_RecvCString);
 	//}}AFX_DATA_MAP
 }
 
