@@ -25,6 +25,7 @@
 // TODO: reference additional headers your program requires here
 #include <winsock.h>
 #include <conio.h>
+#include <string.h>
 
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
