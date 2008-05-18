@@ -165,6 +165,10 @@ void CWebServerDlg::OnBtnStart()
 	if(webPageFileFind.FindFile(requestPagePath))
 	{
 		webPageFile.Open(requestPagePath,CFile::modeRead|CFile::typeBinary);
+		for(indexI=0;indexI<65536;indexI++)
+			{
+				webPageFileContent[indexI]='\0';
+			}
 		webPageFileLength=webPageFile.GetLength();
 		webPageFile.Read(webPageFileContent,(UINT)webPageFileLength-1);
 		sendData=webPage200+webPageFileContent;
