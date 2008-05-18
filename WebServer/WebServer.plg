@@ -6,6 +6,17 @@
 --------------------Configuration: WebServer - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP247.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/WebServer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\tangooricha\Microsoft Visual Studio\Design for Graduation\WebServer\WebServerDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP247.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/WebServer.pdb" /debug /machine:I386 /out:"Debug/WebServer.exe" /pdbtype:sept  ".\Debug\StdAfx.obj" ".\Debug\WebServer.obj" ".\Debug\WebServerDlg.obj" ".\Debug\WebServer.res" "
+<h3>Output Window</h3>
+Compiling...
+WebServerDlg.cpp
+Linking...
 
 
 
