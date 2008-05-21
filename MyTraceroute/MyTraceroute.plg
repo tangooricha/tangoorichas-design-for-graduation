@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MyTraceroute - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16F.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/MyTraceroute.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"E:\tangooricha\Microsoft Visual Studio\Design for Graduation\MyTraceroute\MyTracerouteMain.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16F.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP171.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  ws2_32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/MyTraceroute.pdb" /debug /machine:I386 /out:"Debug/MyTraceroute.exe" /pdbtype:sept 
+".\Debug\MyTracerouteMain.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP171.tmp"
+<h3>Output Window</h3>
+Compiling...
+MyTracerouteMain.cpp
+e:\tangooricha\microsoft visual studio\design for graduation\mytraceroute\ws2tcpip.h(29) : warning C4005: 'IP_TOS' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\include\winsock.h(341) : see previous definition of 'IP_TOS'
+e:\tangooricha\microsoft visual studio\design for graduation\mytraceroute\ws2tcpip.h(30) : warning C4005: 'IP_TTL' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\include\winsock.h(340) : see previous definition of 'IP_TTL'
+e:\tangooricha\microsoft visual studio\design for graduation\mytraceroute\ws2tcpip.h(31) : warning C4005: 'IP_MULTICAST_IF' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\include\winsock.h(335) : see previous definition of 'IP_MULTICAST_IF'
+e:\tangooricha\microsoft visual studio\design for graduation\mytraceroute\ws2tcpip.h(32) : warning C4005: 'IP_MULTICAST_TTL' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\include\winsock.h(336) : see previous definition of 'IP_MULTICAST_TTL'
+e:\tangooricha\microsoft visual studio\design for graduation\mytraceroute\ws2tcpip.h(33) : warning C4005: 'IP_MULTICAST_LOOP' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\include\winsock.h(337) : see previous definition of 'IP_MULTICAST_LOOP'
+e:\tangooricha\microsoft visual studio\design for graduation\mytraceroute\ws2tcpip.h(34) : warning C4005: 'IP_ADD_MEMBERSHIP' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\include\winsock.h(338) : see previous definition of 'IP_ADD_MEMBERSHIP'
+e:\tangooricha\microsoft visual studio\design for graduation\mytraceroute\ws2tcpip.h(35) : warning C4005: 'IP_DROP_MEMBERSHIP' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\include\winsock.h(339) : see previous definition of 'IP_DROP_MEMBERSHIP'
+e:\tangooricha\microsoft visual studio\design for graduation\mytraceroute\ws2tcpip.h(36) : warning C4005: 'IP_DONTFRAGMENT' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\include\winsock.h(342) : see previous definition of 'IP_DONTFRAGMENT'
+Linking...
+
+
+
+<h3>Results</h3>
+MyTraceroute.exe - 0 error(s), 8 warning(s)
+</pre>
+</body>
+</html>
