@@ -6,21 +6,16 @@
 --------------------Configuration: MailSender - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP56.tmp" with contents
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP197.tmp" with contents
 [
 /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/MailSender.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"E:\tangooricha\Microsoft Visual Studio\Design for Graduation\MailSender\MailSender.cpp"
 "E:\tangooricha\Microsoft Visual Studio\Design for Graduation\MailSender\MailSenderDlg.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP56.tmp" 
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP197.tmp" 
 Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/MailSender.pdb" /debug /machine:I386 /out:"Debug/MailSender.exe" /pdbtype:sept  ".\Debug\MailSender.obj" ".\Debug\MailSenderDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\MailSender.res" "
 <h3>Output Window</h3>
 Compiling...
 MailSenderDlg.cpp
-Generating Code...
-Compiling...
-MailSender.cpp
-Generating Code...
 Linking...
 
 

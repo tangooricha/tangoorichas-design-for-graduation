@@ -202,7 +202,7 @@ void CMailSenderDlg::OnBtnSend()
 	clientData+=m_from+">\t\n";
 	clientData+="To: \""+toName+"\" <";
 	clientData+=m_to+">\t\n";
-	clientData+="Subject: "+m_subject;
+	clientData+="Subject: "+m_subject+"\t\n";
 	clientData+="Mime-Version: 1.0\t\nContent-Type: text\\/plain;\t\n.charset=\"gb2312\"\t\nContent-Transfer-Encoding: 7bit\t\n\t\n";
 	clientData+=m_mailContent;
 	clientData+="\t\n.\t\n";
