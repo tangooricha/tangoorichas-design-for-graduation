@@ -26,7 +26,7 @@ Type=0
 HeaderFile=MailSenderDlg.h
 ImplementationFile=MailSenderDlg.cpp
 Filter=D
-LastObject=CMailSenderDlg
+LastObject=IDC_EDIT_MAIL
 BaseClass=CDialog
 VirtualFilter=dWC
 
@@ -45,7 +45,7 @@ Control6=IDC_STATIC,button,1342177287
 Control7=IDC_STATIC,button,1342177287
 Control8=IDC_EDIT_TO,edit,1350631556
 Control9=IDC_EDIT_SUBJECT,edit,1350631552
-Control10=IDC_EDIT_MAIL,edit,1350631556
-Control11=IDC_BTN_SEND,button,1342242816
+Control10=IDC_EDIT_MAIL,edit,1352728772
+Control11=IDC_BTN_RECV,button,1342242816
 Control12=ID_APP_EXIT,button,1342242816
 
