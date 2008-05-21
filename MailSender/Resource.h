@@ -10,7 +10,7 @@
 #define IDC_EDIT_TO                     1002
 #define IDC_EDIT_SUBJECT                1003
 #define IDC_EDIT_MAIL                   1004
-#define IDC_BTN_SEND                    1005
+#define IDC_BTN_RECV                    1005
 
 // Next default values for new objects
 // 
